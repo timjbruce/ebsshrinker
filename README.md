@@ -1,13 +1,15 @@
 # ebsshrinker
 usage > python storageshrink.py
-requirements:
+
+
+## Requirements:
 1) must be run on the instance to be updated
 2) boto3 must be installed on the system (pip install boto3)
 3) user must have sudo access to rm, mkdir, rsync, mount, umount, mkfs, file
 4) user must have rights to create a file in the directory this is run from
 5) instance must have a role with the policy in rolepolicy.json
 
-local.py
+### local.py
 This file is meant to hold all the variables that are needed to resize EBS storage
 on an ec2 instance.  The variables are defined as follows:
 json_simple:

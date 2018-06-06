@@ -53,7 +53,7 @@ if not local.json_simple['instanceid']==myinstanceid:
 for device in local.json_simple['devices']:
     #Validate that temp_dir does not yet exist and that data_dir does exist
     logging.info('Checking for {}'.format(device['temp_dir']))
-    if device['temp_dir']=='/' or device['data_dir']:
+    if device['temp_dir']=='/' or device['data_dir']=="/":
         print('Cannot use / as temp_dir or data_dir!')
         logging.info('Attempted to use / as temp_dir or data_dir')
         continue
